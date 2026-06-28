@@ -3,7 +3,7 @@ export default function AboutModal({ isOpen, onClose }) {
   
     return (
       <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/50">
-        <div className="w-full max-w-2xl rounded-xl bg-white p-8 shadow-2xl">
+        <div className="w-full max-w-2xl max-h-[90vh] overflow-y-auto rounded-xl bg-white p-8 shadow-2xl">
   
           <div className="flex items-center justify-between border-b pb-4">
             <h2 className="text-2xl font-bold text-slate-800">
@@ -29,7 +29,25 @@ export default function AboutModal({ isOpen, onClose }) {
               Azure Cloud Engineer Assistant is an AI-powered platform built to simplify Azure operations and accelerate cloud engineering workflows. The current release focuses on AI-driven Incident Management with intelligent Root Cause Analysis, KQL query generation, PowerShell recommendations and production troubleshooting guidance.
               </p>
             </div>
-  
+            <div>
+
+  <h3 className="mb-3 text-lg font-semibold">
+    Why Azure Cloud Engineer Assistant?
+  </h3>
+
+  <p className="text-sm leading-7 text-slate-600">
+  Azure Cloud Engineer Assistant is purpose-built for Azure professionals. It combines Azure Incident Management, Cloud Operations, Migration, Architecture and Automation into one AI-powered engineering workspace, reducing manual effort and context switching.
+  </p>
+
+  <ul className="mt-4 list-disc pl-5 text-sm text-slate-700 space-y-2">
+    <li>Reduce engineering effort by bringing Azure troubleshooting, migration planning, architecture guidance and automation into one focused workspace.</li>
+    <li>Minimize switching between Azure Portal, Microsoft Learn, scripts and multiple AI tools.</li>
+    <li>Generate structured and consistent engineering guidance.</li>
+    <li>Support Azure Incident Management, Cloud Operations, Migration, Architecture and Automation in one platform.</li>
+    <li>Continuously evolving based on real-world Azure engineering scenarios.</li>
+  </ul>
+
+</div>
             <div>
               <h3 className="mb-3 text-lg font-semibold">
                 Current Features
@@ -101,6 +119,26 @@ export default function AboutModal({ isOpen, onClose }) {
   <li>Solution Architecture</li>
   <li>Cost & Governance Advisor</li>
 </ul>
+<div className="mt-6 rounded-lg border border-blue-200 bg-blue-50 p-4">
+
+  <h3 className="text-lg font-semibold text-blue-800">
+    Current Version
+  </h3>
+
+  <p className="mt-2 text-sm leading-7 text-slate-700">
+    Version 1.0 uses a curated Azure engineering knowledge base combined with AI
+    reasoning to generate structured recommendations for common Azure production
+    scenarios.
+  </p>
+
+  <p className="mt-3 text-sm leading-7 text-slate-700">
+  Roadmap:
+  Future releases will introduce optional Azure Tenant Integration, enabling
+    the assistant to securely analyze Azure resources, monitoring data and
+    diagnostics using customer-authorized Azure access.
+  </p>
+
+</div>
             </div>
   
             <div className="border-t pt-4 text-center">
